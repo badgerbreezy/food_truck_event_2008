@@ -26,5 +26,16 @@ class Event
     trucks_with_item
   end
 
+  def total_inventory
+    new_hash = {}
+    # new_hash[item] = 0
+    @food_trucks.each do |food_truck|
+      food_truck.inventory.each do |item, quantity|
+        new_hash[item] += quantity
+      end
+    end
+    new_hash
+  end
+
 
 end
