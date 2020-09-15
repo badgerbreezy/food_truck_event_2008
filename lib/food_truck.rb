@@ -20,14 +20,9 @@ class FoodTruck
         revenue << key.price * value
       end
     end
-    # require 'Pry';binding.pry
     revenue.delete_at(1)
     revenue.delete_at(1)
     revenue.sum
-    # last = revenue.last
-    # first = revenue.first
-    # last + first
-
   end
 
 
