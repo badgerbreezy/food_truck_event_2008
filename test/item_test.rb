@@ -2,7 +2,6 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'Pry'
 require './lib/item'
-require './lib/food_truck'
 
 class ItemTest < Minitest::Test
   def test_it_exists
