@@ -26,6 +26,18 @@ class Event
     trucks_with_item
   end
 
+  def sorted_item_list
+    sorted_items = @food_trucks.map do |food_truck|
+      food_truck.inventory.keys
+    end
+    sorted_array = sorted_items.flatten
+    list = sorted_array.map do |item|
+      item.name
+    end
+    list.sort.uniq
+
+  end
+
   def total_inventory
     new_hash = {}
     # new_hash[item] = 0
