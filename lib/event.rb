@@ -25,4 +25,6 @@ class Event
     end
     trucks_with_item
   end
+
+
 end
