@@ -90,6 +90,7 @@ class EventTest < Minitest::Test
   end
 
   def test_it_can_find_potential_revenue
+    skip
     event = Event.new("South Pearl Street Farmers Market")
     item1 = Item.new({name: 'Peach Pie (Slice)', price: "$3.75"})
     item2 = Item.new({name: 'Apple Pie (Slice)', price: '$2.50'})

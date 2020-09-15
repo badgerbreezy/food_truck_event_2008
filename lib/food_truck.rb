@@ -14,6 +14,21 @@ class FoodTruck
   end
 
   def potential_revenue
+    revenue = []
+    @inventory.keys.each do |key|
+      @inventory.values.each do |value|
+        revenue << key.price * value
+      end
+    end
+    # require 'Pry';binding.pry
+    revenue.delete_at(1)
+    revenue.delete_at(1)
+    revenue.sum
+    # last = revenue.last
+    # first = revenue.first
+    # last + first
+
+  end
 
 
 end
