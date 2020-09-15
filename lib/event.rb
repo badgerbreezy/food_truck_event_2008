@@ -35,15 +35,16 @@ class Event
       item.name
     end
     list.sort.uniq
-
   end
 
   def total_inventory
     new_hash = {}
-    # new_hash[item] = 0
+    new_hash[item]
     @food_trucks.each do |food_truck|
       food_truck.inventory.each do |item, quantity|
-        new_hash[item] += quantity
+        if item == sorted_item_list
+          new_hash[item] = quanitity
+        end
       end
     end
     new_hash
